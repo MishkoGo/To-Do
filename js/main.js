@@ -1,13 +1,15 @@
 const writeForm = document.getElementById('calculate-form'),
-      formaHass = document.getElementById('uncompleted-todos')  
+      formaHass = document.getElementById('uncompleted-todos'),
+      formtextt = document.getElementById('todo-input')
 
 const writing = (e) => {
     e.preventDefault()
-    formaHass.after('after');
+    
 
     let div = document.createElement('div');
+   
     div.className = "todo-item";
-    div.innerHTML = "<span><input type='checkbox'>Drink water</span>";
+    div.innerHTML = `<span><input type='checkbox'>${formtextt.value}</span>`;
     formaHass.append(div);
 }
 

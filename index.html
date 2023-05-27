@@ -10,17 +10,19 @@
     <body>
         <div class="app">
             <h1> Todo List</h1>
-            <input type="text" id="todo-input" placeholder="Write something">
-            <form action="" id="calculate-form">
-                <button type="submit" id="button__flex">
-                   Add <i class="ri-arrow-right-line"></i>
-                </button>
-            </form>
+            <div class="user_input">
+                
+                <form action="" id="calculate-form">
+                    <input type="text" id="todo-input" placeholder="Write something" value=""><button type="submit" id="button__flex">Add</button>
+                    
+                </form>
+            </div>
+           
             <div class="todos">
                 <div id="uncompleted-todos">
                     <div class="todo-item">
                         <span>
-                            <input type="checkbox">Drink water
+                            <input type="checkbox">Example Task
                         </span>
                         <a href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
